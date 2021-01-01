@@ -128,8 +128,8 @@ a {
 }
 
 .nav1__item {
-  width: 160px;
-  margin-right: 60px;
+  width: 165px;
+  margin-right: 50px;
 }
 
 .nav1__item img {
@@ -166,4 +166,14 @@ a {
 }
 .nav2__item:hover {
   opacity: 0.8;
+}
+
+#pro {
+  text-transform: uppercase;
+  font-size: 11px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin-left: 5px;
+  padding: 1px;
+  border-radius: 2px;
 }
