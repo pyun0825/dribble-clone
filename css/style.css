@@ -237,6 +237,7 @@ a {
 
 .main-container {
   margin: 32px 72px;
+  position: relative;
 }
 
 /* Main Nav*/
@@ -333,6 +334,7 @@ a {
 }
 
 .main__nav--filters {
+  /* position: relative; */
 }
 .main__nav--filters-btn {
   padding: 10px 15px;
@@ -344,4 +346,44 @@ a {
 }
 .main__nav--filters-btn:hover {
   border-color: rgba(0, 0, 0, 0.2);
+}
+
+.filter__dropdown {
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__dropdown-item {
+  width: 100%;
+}
+
+.filter__dropdown-item h5 {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.filter__input {
+  position: relative;
+}
+
+.filter__input i {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter__input input {
+  width: 100%;
+  max-width: 325px;
+  padding: 12px 20px;
+  padding-left: 40px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
 }
