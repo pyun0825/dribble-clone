@@ -232,6 +232,7 @@ a {
 /* Main */
 .main-content {
   background-color: #fff;
+  position: relative;
 }
 
 .main-container {
@@ -457,6 +458,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
+  margin-bottom: 50px;
 }
 
 .main__design {
@@ -492,6 +494,40 @@ a {
 .design-image {
   width: 100%;
   border-radius: 6px;
+}
+
+.hover-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s linear;
+}
+.image-wrapper:hover .hover-items {
+  opacity: 1;
+  visibility: visible;
+}
+.hover-items h5 {
+  font-weight: 500;
+}
+.hover__icons {
+  color: #333;
+}
+.hover__icons i {
+  background-color: rgb(230, 230, 230);
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hover__icons i:first-child {
+  margin-right: 5px;
 }
 
 .design-title {
@@ -546,4 +582,47 @@ a {
 .design__comment i:hover,
 .design__heart i:hover {
   color: #ea4c89;
+}
+
+/* Main Sign in up btn */
+.main__sign {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.main__sign button {
+  width: 250px;
+}
+.main__sign button:last-child {
+  color: #ea4c89;
+  transition: all 0.1s linear;
+}
+.main__sign button:last-child:hover {
+  opacity: 0.7;
+}
+
+/* Page-up */
+#page-up {
+  display: block;
+  position: fixed;
+  opacity: 0.5;
+  visibility: hidden;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+#page-up.fix {
+  position: absolute;
+}
+
+#page-up:hover {
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  height: 100vh;
+  background-color: #fafafb;
 }
