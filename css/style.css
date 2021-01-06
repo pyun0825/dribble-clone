@@ -627,12 +627,14 @@ a {
 }
 
 .footer__container {
-  padding: 70px 185px;
+  padding: 70px 185px 0px 185px;
 }
 
 .footer__top {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer__column {
@@ -731,4 +733,26 @@ a {
 }
 .footer__ad:hover {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__bottom {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__shots {
+  display: flex;
+  align-items: center;
+}
+
+.footer__shots-bold {
+  font-weight: 700;
+}
+
+.footer__shots i {
+  color: #ea4c89;
 }
