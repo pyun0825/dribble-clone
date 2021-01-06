@@ -623,6 +623,112 @@ a {
 
 /* Footer */
 .footer {
-  height: 100vh;
   background-color: #fafafb;
+}
+
+.footer__container {
+  padding: 70px 185px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  width: 100%;
+  max-width: 300px;
+  margin: 0px 10px;
+}
+.footer__column:first-child {
+  margin-right: 60px;
+}
+
+.footer__dribble-icon {
+  fill: #ea4c89;
+  width: 104px;
+  margin-bottom: 20px;
+  transition: fill 0.1s linear;
+}
+.footer__dribble-icon:hover {
+  fill: #c03f70;
+}
+
+.footer__description {
+  font-size: 15px;
+  max-width: 160px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.footer__icons {
+  display: flex;
+  max-width: 160px;
+  justify-content: space-between;
+  font-size: 19px;
+}
+.icon a {
+  transition: color 0.1s linear;
+}
+.icon a:hover {
+  color: #000;
+}
+
+.list--title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.footer__list {
+  line-height: 2.5;
+  font-size: 15px;
+}
+
+.footer__list-item a {
+  transition: color 0.1s linear;
+}
+.footer__list-item a:hover {
+  color: #000;
+}
+
+.footer__column:last-child {
+  display: flex;
+  width: 500px;
+  max-width: 500px;
+}
+
+.footer__market-logo {
+  max-width: 130px;
+  max-height: 100px;
+  object-fit: contain;
+  align-items: flex-start;
+}
+
+.description__wrapper {
+  width: 150px;
+  line-height: 1.5;
+}
+
+.market-description {
+  /* width: 100%; */
+  font-size: 14px;
+  /* max-width: 150px; */
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.1s linear;
+}
+.footer__ad {
+  /* max-width: 100px; */
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+  transition: color 0.1s linear;
+}
+
+.market-description:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.footer__ad:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
