@@ -20,6 +20,7 @@
   position: relative;
   /* position needed for z-index */
   z-index: 2;
+  white-space: nowrap;
 }
 
 .main__nav--dropdown {
@@ -85,9 +86,46 @@
   font-weight: 500;
 }
 
+.arrow-wrap {
+  position: relative;
+  margin: 0px 80px;
+}
+
 .main__nav--list {
+  position: relative;
+  height: 42px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#left-arrow,
+#right-arrow {
+  position: absolute;
+  padding: 13.5px 5px;
+  display: none;
+  z-index: 2;
+}
+#left-arrow {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    white 50%
+  );
+  left: 0px;
+  top: 0;
+}
+#right-arrow {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    white 50%
+  );
+  right: 0;
+  top: 0;
 }
 
 .main__nav--item {

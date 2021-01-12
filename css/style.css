@@ -49,6 +49,16 @@ a {
   }
 }
 
+@media (max-width: 1351px) {
+  /* Main */
+  .arrow-wrap {
+    min-width: 0;
+    /* without min width it won't shrink => cause flexitems won't shrink smaller than it's content */
+  }
+  .main__nav--list {
+  }
+}
+
 @media (max-width: 1200px) {
   /* header */
   #seperator {
@@ -66,6 +76,25 @@ a {
 
   .visual__img img {
     max-width: 350px;
+  }
+
+  /* Main */
+  .main-container {
+    margin: 0px 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main__nav {
+    flex-wrap: wrap;
+  }
+  .arrow-wrap {
+    order: 3;
+    min-width: auto;
+    width: 100%;
+    padding-top: 15px;
+    margin: 15px 0px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -196,5 +225,11 @@ a {
   .visual__img img {
     width: 100%;
     max-width: 410px;
+  }
+
+  /* Main */
+
+  .main__nav {
+    padding: 20px 0px;
   }
 }
