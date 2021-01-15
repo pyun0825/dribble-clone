@@ -91,9 +91,10 @@ a {
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 800px) {
   /* footer */
-  .footer__column:first-child {
+  .footer__top {
+    flex-direction: column;
   }
 }
 
